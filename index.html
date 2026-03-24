@@ -594,7 +594,7 @@ const domains = {
     "布线": {
         color: "#3a9d60",
         dotColor: "#3a9d60",
-        works: ["NeuralSteiner"]
+        works: ["NeuralSteiner", "AiDRC"]
     },
     "旅行商": {
         color: "#2e86c1",
@@ -684,6 +684,14 @@ const works = {
         url: "https://link.springer.com/article/10.1007/s00521-023-09042-6",
         github: "https://github.com/Jane1809/NeuralGLS",
         image: "images/neuralgls.jpg"
+    },
+    "AiDRC": {
+        title: "AiDRC: Accelerating Detailed Routing by AI-Driven Design Rule Violation Prediction and Checking",
+        abstract: "Design rule violation (DRV) evaluation and optimization constitute a critical challenge in modern VLSI physical design. Fast and accurate assessments of routability and DRV have gained significant research attention due to their pivotal role in improving design closure efficiency. Traditional detailed routing and design rule checking (DRC) are computationally expensive. To address the above challenges, this work leverages AI models for the specific location prediction of DRVs in the pre-detailed routing stage and the checking of DRVs during detailed routing, which achieves fast and precise DRV evaluation. By integrating the crisscross attention mechanism and channel transformer within a ResNet backbone, our proposed DRV prediction and checking model gains the capability to learn non-local and cross-layer feature relationships and mitigates the negative impact of data imbalance. Experiments demonstrate the effectiveness of our prediction model and checking model, with area under curve (AUC) of 0.987 and F1-score of 0.934, respectively. Remarkably, when integrated into an open-source detailed routing tool, our DRV prediction model achieves 16 × acceleration, while our DRV checking model achieves a 293 × acceleration over the conventional DRC engine. By applying the predicted DRVs to the detailed routing tool, our framework eliminates an average of 44% DRVs of the initial detailed routing results, effectively bridging the gap between data-driven predictions and rule-based detailed routing workflows.",
+        // url: "https://doi.org/10.1145/3769306",
+        url: "https://dl.acm.org/doi/10.1145/3769306",
+        github: null,
+        image: "images/aidrc.jpg"
     }
 };
 
